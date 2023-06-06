@@ -6,3 +6,7 @@ Upto v39 of this indicator is capturing data for training AI. AP5,AP7,AP14, and 
 APMasterv40,41,42 are updates of APMaster that is being use for prediction purpose. Instead of store the data to csv these version of master data send the data item to AI server using Web Request. AI server return response using Web Request in realtime. And this predicted response is used for trading purpose.
 
 #AI Server is python script that is using Flask for webrequest acceptance and prediction response return job to Ninja Trader Script. RandomForest and LightGBM Models are used for Trade Entery Point prediction. While RESNET101 is used for trade type prediction.
+
+
+Data, Models, Results and Tutorials can be found here
+https://drive.google.com/drive/u/1/folders/13_hiC4ZEvfNkmSvmqgmPhIB6hmodvCYv
