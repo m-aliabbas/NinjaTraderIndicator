@@ -1,12 +1,36 @@
-# NinjaTraderIndicator
-This repo contains the indicator that I have developed for my organization ML Trades. These indicator do different type of calculation for data capturing. 
-#APMasterIndicator 
-Upto v39 of this indicator is capturing data for training AI. AP5,AP7,AP14, and AP21 are slave indicator where APMaster is doing the master job. Client indicator do calculation on Renko Chart 5,7,14, and 21 respectively. After calculation slave indicator store the data on database bar by bar on real time. Another hand ,APMaster will get this data in realtime from the database and perform some statistical calulation and write data to CSV file for AI Training. This data contains 106 columns and superviosed learning models are trained on data for prediction.
+# NinjaTraderIndicator - Advanced Trading Data Capture and Prediction
 
-APMasterv40,41,42 are updates of APMaster that is being use for prediction purpose. Instead of store the data to csv these version of master data send the data item to AI server using Web Request. AI server return response using Web Request in realtime. And this predicted response is used for trading purpose.
+## Overview
 
-#AI Server is python script that is using Flask for webrequest acceptance and prediction response return job to Ninja Trader Script. RandomForest and LightGBM Models are used for Trade Entery Point prediction. While RESNET101 is used for trade type prediction.
+Welcome to the NinjaTraderIndicator repository developed by ML Trades, an innovative trading organization. Our indicator is designed to perform various calculations for efficient data capture and enable accurate predictions for trading decisions.
 
+## APMasterIndicator (#APMasterIndicator)
 
-Data, Models, Results and Tutorials can be found here
-https://drive.google.com/drive/u/1/folders/13_hiC4ZEvfNkmSvmqgmPhIB6hmodvCYv
+The flagship component of our indicator, APMasterIndicator, plays a pivotal role in capturing data for training AI models. Versions up to v39 are specifically designed for data collection, providing a solid foundation for AI-driven analysis.
+
+## Slave Indicators (AP5, AP7, AP14, AP21)
+
+AP5, AP7, AP14, and AP21 are essential slave indicators, working in conjunction with APMaster. These indicators perform calculations on Renko Charts with intervals of 5, 7, 14, and 21 respectively. Each slave indicator captures data in real time, storing it meticulously in a database on a bar-by-bar basis.
+
+## APMaster's Data Analysis and AI Training
+
+APMaster excels in real-time data analysis, leveraging the captured data from the database. It performs intricate statistical calculations and writes the results into a comprehensive CSV file. This file, containing an extensive 106 columns of valuable data, serves as the training set for our supervised learning models, enabling accurate predictions.
+
+## Enhanced Prediction Versions (APMasterv40, APMasterv41, APMasterv42)
+
+We continuously enhance APMaster to optimize its prediction capabilities. In versions APMasterv40, APMasterv41, and APMasterv42, significant updates have been implemented. Instead of storing data in a CSV file, these versions directly send data items to our dedicated AI server using Web Requests.
+
+## AI Server and Real-time Predictions
+
+Our AI server, powered by a Python script built with Flask, effortlessly handles web request acceptance and provides real-time prediction responses to the Ninja Trader Script. We have employed advanced machine learning models, including RandomForest and LightGBM, for accurate trade entry point prediction. Furthermore, the state-of-the-art RESNET101 model excels in trade type prediction.
+
+## Accessing Additional Resources
+
+For your convenience, we have consolidated the necessary resources in a [Google Drive folder](https://drive.google.com/drive/u/1/folders/13_hiC4ZEvfNkmSvmqgmPhIB6hmodvCYv). You can find the following items there:
+
+- Data: The captured trading data used for training our AI models.
+- Models: The trained machine learning models for prediction.
+- Results: Comprehensive results and analysis based on our indicator's performance.
+- Tutorials: In-depth tutorials to help you navigate and leverage our indicator effectively.
+
+Feel free to explore the repository, utilize the power indicator, and make informed trading decisions backed by cutting-edge AI technology.
